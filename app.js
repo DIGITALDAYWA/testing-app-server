@@ -15,7 +15,7 @@ app.options('*', cors())
 //middleware
 app.use(bodyParser.json())
 app.use(morgan('tiny'))
-app.use(authjwt())
+//app.use(authjwt())
 app.use('/public/uploads', express.static(__dirname + '/public/uploads'))
 app.use(errorHandler)
 
